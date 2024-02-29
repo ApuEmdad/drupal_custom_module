@@ -1,0 +1,9 @@
+name: "Quality Framework"
+type: theme
+description: "A custom theme for the project Quality Framework"
+core_version_requirement: ^10
+base theme: false
+stylesheets-remove:
+  - "normalize.css"
+libraries:
+  - "quality_framework/global-styling"

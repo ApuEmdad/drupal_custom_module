@@ -1,0 +1,8 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/bootstrap_5.min.css: {}
+      scss/style.css: {}
+  js:
+    js/bootstrap_5.bundle.min.js: {}
