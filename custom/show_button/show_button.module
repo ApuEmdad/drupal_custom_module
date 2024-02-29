@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+
+function show_button_theme($existing, $type, $theme, $path)
+{
+  return [
+    'show-button' => [
+      'variables' => ['content' => null]
+    ],
+  ];
+}

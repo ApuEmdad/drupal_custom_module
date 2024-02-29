@@ -1,0 +1,24 @@
+employee.employee:
+  path: "/employee-data"
+  defaults:
+    _title: "Employee Details"
+    _form: 'Drupal\employee\Form\EmployeeForm'
+  requirements:
+    _permission: "access content"
+
+employee.employee_list:
+  path: "/employee-list"
+  defaults:
+    _controller: '\Drupal\employee\Controller\EmployeeController::employeeList'
+    _title: "Employee List"
+  requirements:
+    _permission: "access content"
+
+employee.employee_detail:
+  path: "/employee/{id}"
+  defaults:
+    _controller: '\Drupal\employee\Controller\EmployeeController::employeeDetail'
+    _title_callback: '\Drupal\employee\Controller\EmployeeController::employeeDetail'
+  requirements:
+    _permission: "access content"
+    id: \d+

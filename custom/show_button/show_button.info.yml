@@ -1,0 +1,5 @@
+name: Show Button
+description: Show in console.log
+package: CUSTOM
+type: module
+core_version_requirement: ^10

@@ -1,0 +1,7 @@
+contact_us.listing:
+  path: "/contact-us"
+  defaults:
+    _controller: '\Drupal\contact_us\Controller\ContactUs::view'
+    _title: "Contact Us"
+  requirements:
+    _permission: "access content"

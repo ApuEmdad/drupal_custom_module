@@ -1,0 +1,32 @@
+{{dump(employees['#employees'])}}
+<div class="employee-list">
+  <h2>Employee List</h2>
+  <ul>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Zip Code</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for employee in employees['#employees'] %}
+        <tr>
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.emp_firstname }}</td>
+          <td>{{ employee.emp_lastname }}</td>
+          <td>{{ employee.emp_email }}</td>
+          <td>{{ employee.emp_zipcode }}</td>
+          <td><a href="{{ path('employee.employee_detail', {'id': employee.id}) }}">Details</a></td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+      </tbody>
+    </table>
+  </ul>
+</div>

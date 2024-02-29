@@ -1,0 +1,35 @@
+{{dump(employee)}}
+<div class="employee-detail">
+  <h2 class="mb-4">Employee Detail</h2>
+  <table class="table w-50">
+    <tbody>
+      <tr>
+        <td><strong>Employee ID:</strong></td>
+        <td>{{ id }}</td>
+      </tr>
+      <tr>
+        <td><strong>First Name:</strong></td>
+        <td>{{ employee.emp_firstname }}</td>
+      </tr>
+      <tr>
+        <td><strong>Last Name:</strong></td>
+        <td>{{ employee.emp_lastname }}</td>
+      </tr>
+      <tr>
+        <td><strong>Email:</strong></td>
+        <td>{{ employee.emp_email }}</td>
+      </tr>
+      <tr>
+        <td><strong>ZIP Code:</strong></td>
+        <td>{{ employee.emp_zipcode }}</td>
+      </tr>
+      <tr>
+        <td><strong>File:</strong></td>
+        <td>
+          <a href="{{ file_url(employee.emp_file) }}" download>Download</a>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

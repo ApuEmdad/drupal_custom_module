@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+
+function contact_us_theme($existing, $type, $theme, $path)
+{
+  return [
+    'contact-us' => [
+      'variables' => ['content' => null]
+    ],
+  ];
+}

@@ -1,0 +1,7 @@
+show_button.listing:
+  path: "/show-button"
+  defaults:
+    _controller: '\Drupal\show_button\Controller\ShowButton::view'
+    _title: "Show Button"
+  requirements:
+    _permission: "access content"
